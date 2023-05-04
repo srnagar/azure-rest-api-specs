@@ -31,6 +31,17 @@ model ChatMessage {
     content?: string;
 }
 
+@doc("An incremental message delta within chat completion streaming.")
+model ChatMessageDelta {
+    @doc("The role associated with this message payload.")
+    @projectedName("json", "role")
+    role?: ChatRole;
+
+    @doc("The text associated with this message payload.")
+    @projectedName("json", "content")
+    content?: string;
+}
+
 @doc("""
 The configuration information for a chat completions request.
 Completions support a wide variety of tasks and generate text that continues from or "completes"
