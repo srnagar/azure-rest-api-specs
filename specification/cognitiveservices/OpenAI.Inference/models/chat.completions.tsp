@@ -174,7 +174,7 @@ model ChatChoice {
     @doc("The delta message content for a streaming response.")
     @projectedName("json", "delta")
     @projectedName("csharp", "InternalStreamingDeltaMessage")
-    delta?: ChatMessage;
+    delta?: ChatMessageDelta;
 }
 
 @doc("""
