@@ -37,7 +37,7 @@ options:
   "@azure-tools/typespec-java":
     package-dir: "azure-data-appconfiguration"
     namespace: com.azure.data.appconfiguration
-    flavor: azure
+    flavor: azurev2
 linter:
   extends:
     - "@azure-tools/typespec-azure-rulesets/data-plane"
