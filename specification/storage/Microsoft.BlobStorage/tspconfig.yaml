@@ -33,7 +33,7 @@ options:
   "@azure-tools/typespec-java":
     package-dir: "azure-storage-blob"
     namespace: com.azure.storage.blob
-    flavor: azure
+    flavor: azurev2
     partial-update: true
     generate-tests: false
     generate-samples: false
