@@ -34,6 +34,9 @@ options:
     package-dir: "azure-storage-blob"
     namespace: com.azure.storage.blob
     flavor: azure
+    partial-update: true
+    generate-tests: false
+    generate-samples: false
   "@azure-tools/typespec-rust":
     package-dir: "azure_storage_blob"
     crate-name: "azure_storage_blob"

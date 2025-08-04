@@ -914,7 +914,8 @@ model ListBlobsFlatSegmentResponse {
 
   /** The blob segment. */
   @Xml.name("Blobs")
-  segment: BlobFlatListSegment;
+  @pageItems
+  segment: BlobItemInternal[];
 
   /** The next marker of the blobs. */
   @continuationToken
@@ -2061,7 +2062,8 @@ model ListBlobsHierarchySegmentResponse {
 
   /** The blob segment. */
   @Xml.name("Blobs")
-  segment: BlobHierarchyListSegment;
+  @pageItems
+  segment: BlobItemInternal[];
 
   /** The next marker of the blobs. */
   @continuationToken

@@ -13,14 +13,14 @@ model BlobServiceClientParameters {
   ...BlobPathParameter;
 }
 
-@@clientNamespace(Storage.Blob, "Azure.Storage.Blobs");
-@@clientNamespace(Storage.Blob.Container, "Azure.Storage.Blobs");
-@@clientNamespace(Storage.Blob.Container.Blob, "Azure.Storage.Blobs");
+@@clientNamespace(Storage.Blob, "Azure.Storage.Blobs", "csharp");
+@@clientNamespace(Storage.Blob.Container, "Azure.Storage.Blobs", "csharp");
+@@clientNamespace(Storage.Blob.Container.Blob, "Azure.Storage.Blobs", "csharp");
 @@clientNamespace(Storage.Blob.Container.Blob.AppendBlob,
-  "Azure.Storage.Blobs"
+  "Azure.Storage.Blobs", "csharp"
 );
-@@clientNamespace(Storage.Blob.Container.Blob.BlockBlob, "Azure.Storage.Blobs");
-@@clientNamespace(Storage.Blob.Container.Blob.PageBlob, "Azure.Storage.Blobs");
+@@clientNamespace(Storage.Blob.Container.Blob.BlockBlob, "Azure.Storage.Blobs", "csharp");
+@@clientNamespace(Storage.Blob.Container.Blob.PageBlob, "Azure.Storage.Blobs", "csharp");
 
 @@clientName(Storage.Blob, "BlobServiceClient", "rust");
 @@clientName(Storage.Blob.Container, "BlobContainerClient", "rust");
